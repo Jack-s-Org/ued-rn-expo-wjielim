@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import AntDesign from "@expo/vector-icons/AntDesign";
+
 import HomeScreen from "./HomeScreen";
 import NotificationsScreen from "./NotificationsScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -32,7 +34,7 @@ const MainTabs = ({ navigation }) => {
             component={HomeScreen}
             options={{
               tabBarIcon: ({ color, size }) => (
-                <Ionicons name="home" size={size} color={color} />
+                <AntDesign name="adduser" size={64} color={color} />
               ),
               tabBarLabel: "Home",
             }}
